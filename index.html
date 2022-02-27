@@ -15,8 +15,24 @@
         <link rel="icon" type="image/png" href="logo.png"/>
         <title>Wordearch</title>
     </head>
-    <body>
-        <div class="container">
+    <body class="bg-gray-800">
+        <header class="text-gray-600">
+            <div class="container mx-auto flex flex-wrap p-1  md:flex-row items-center">
+              <a href="https://jemi.so/treciaks" 
+              target="blank"
+              class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img class="w-20 h-20 p-2 rounded-full" src="logo.png">
+                <span class="ml-1 text-white text">TreciaKS</span>
+              </a>
+              <nav class="ml-auto flex flex-wrap items-center text-base justify-center">
+                <a href="https://github.com/TreciaKS/Wordearch" target="blank"
+                class="mr-5 text-gray-200 inline-flex items-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base -mt-3 md:mt-0">Github</a>
+              </nav>
+              
+            </div>
+          </header>
+
+        <section class="container">
             <div class="search-box">
                 <input
                     type="text"
@@ -27,7 +43,7 @@
             </div>
             <!-- the results be displayed here -->
             <div class="result" id="result"></div>
-        </div>
+        </section>
         <!-- Script -->
         <script src="script.js"></script>
     </body>
