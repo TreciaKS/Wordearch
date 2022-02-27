@@ -14,13 +14,26 @@ btn.addEventListener("click", () => {
                 <div class="word">
                     <h3>${inpWord}</h3>
                 </div>
-                <div class="details">
+                <div class="firstDetails">
                     <p>${data[0].meanings[0].partOfSpeech}</p>
-                    <p>/${data[0].phonetic}/</p>
+
+                <div class="word-meaning text-red-500">
+                    <p>1. ${data[0].meanings[0].definitions[0].definition || ""}</p>
+                    <p>2. ${data[0].meanings[0].definitions[1].definition || ""}</p>
+                    <p>3. ${data[0].meanings[0].definitions[2].definition || ""}</p>
                 </div>
-                <p class="word-meaning">
-                   ${data[0].meanings[0].definitions[0].definition}
-                </p>
+
+                <div class="secondDetails">
+                    <p>${data[0].meanings[1].partOfSpeech}</p>
+
+                <div class="word-meaning">
+                    <p>1. ${data[0].meanings[1].definitions[0].definition || ""}</p>
+                    <p>2. ${data[0].meanings[1].definitions[1].definition || ""}</p>
+                    <p>3. ${data[0].meanings[1].definitions[2].definition || ""}</p>
+                </div>
+
+                </div>
+
                 <p class="word-example">
                     ${data[0].meanings[0].definitions[0].example || ""}
                 </p>`;
