@@ -26,13 +26,42 @@
               </a>
               <nav class="ml-auto flex flex-wrap items-center text-base justify-center">
                 <a href="https://github.com/TreciaKS/Wordearch" target="blank"
-                class="mr-5 text-gray-200 inline-flex items-center bg-gray-700 border-0 py-1 px-3 focus:outline-none hover:bg-gray-600 rounded text-base -mt-3 md:mt-0">Github</a>
+                class="mr-5 text-gray-200 inline-flex items-center bg-indigo-500 border-0 py-1 px-3 focus:outline-none hover:bg-indigo-400 rounded text-base -mt-3 md:mt-0">Github</a>
               </nav>
               
             </div>
           </header>
 
-        <section class="container">
+
+          
+        <section class="container relative w-full max-w-md px-5 py-4 mx-auto rounded-md">  
+            <div class="container px-6 py-2 mx-auto text-center">
+                <div class="max-w-lg mx-auto">
+                  <h1 class="text-3xl font-bold text-indigo-500 md:text-4xl">Wordearch</h1>
+                    <p class="mt-4 mb-7 text-gray-500 dark:text-gray-300">Your friendly educational online dictionary.</p>
+                </div>
+            </div>
+
+            <div class="flex relative search-box">
+                <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+                    <svg class="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </span>
+
+                <input 
+                type="text" 
+                class="w-full py-3 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-indigo-500 focus:outline-none focus:ring" 
+                placeholder="Type the word here.."
+                id="inp-word">
+                <button id="search-btn" class="text-gray-100 ml-5 px-4 bg-indigo-500 rounded-md hover:bg-indigo-400">Search</button>
+
+            </div>
+
+                <div id="result" class="result block py-1"></div>
+        </section>
+
+        <!-- <section class="container">
             <div class="search-box">
                 <input
                     type="text"
@@ -40,9 +69,9 @@
                     id="inp-word"
                 />
                 <button id="search-btn">Search</button>
-            </div>
+            </div> -->
             <!-- the results be displayed here -->
-            <div class="result" id="result"></div>
+            <!-- <div class="result" id="result"></div> -->
         </section>
         <!-- Script -->
         <script src="script.js"></script>
