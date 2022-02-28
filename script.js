@@ -11,8 +11,9 @@ btn.addEventListener("click", () => {
 
             // display results in the DOM
             result.innerHTML = `
-                <div class="text-3xl text-center text-indigo-500 capitalize underline pt-2 pb-2">
-                    <h3>${inpWord}</h3>
+                <div class="text-center pt-2 pb-2">
+                    <h3 class="text-3xl text-indigo-500 capitalize underline">${inpWord}</h3>
+                    <p class="text-white text-xl">/${data[0].phonetic}/</p>
                 </div>
 
                 <div class="py-8 flex flex-wrap md:flex-nowrap">
