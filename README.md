@@ -1,11 +1,5 @@
 # Wordearch
 A dictionary app 
-# Joke-Generator
-Joke Generator to created with API. Just click on the button to display joke.
-
-# portfolio-website
-
-### Welcome to my personal portfolio website. I wanted it to be as unique as possible and to display my own personality. I loved the arcade game Pac-Man and I took inspiration from it. Hopefully my theme gives of that 80s retro atmosphere.
 
 <h2>Current Challenge</h2>
 <ul>
